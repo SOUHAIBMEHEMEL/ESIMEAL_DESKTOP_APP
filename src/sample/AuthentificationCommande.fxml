@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="parent" prefHeight="500.0" prefWidth="600.0" style="-fx-background-color:WHITE ;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Commander">
+   <children>
+      <ImageView fitHeight="461.0" fitWidth="627.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true" style="-fx-scale-y: 1.12;">
+         <image>
+            <Image url="@black.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="200.0" fitWidth="90.0" layoutY="0.0" pickOnBounds="true" preserveRatio="true" style="-fx-scale-y: 1;">
+         <image>
+            <Image url="@LOGOESIMEAL.gif" />
+         </image>
+         <GridPane.margin>
+            <Insets bottom="120.0" left="380.0" top="-190.0" />
+         </GridPane.margin>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" prefHeight="500.0" prefWidth="600.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="51.0" prefWidth="100.0">
+               <children>
+                  <Label alignment="TOP_CENTER" text="Etape 1 : Authentification" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <Label alignment="TOP_CENTER" prefHeight="25.0" prefWidth="548.0" text="Inserez vos informations personnelles ici" textFill="#c90808">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="82.0" prefWidth="600.0">
+               <children>
+                  <Label text="Nom                           " textFill="WHITE" />
+                  <TextField fx:id="nom">
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <VBox.margin>
+                  <Insets top="40.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="82.0" prefWidth="600.0">
+               <children>
+                  <Label text="Prenom                      " textFill="WHITE" />
+                  <TextField fx:id="prenom">
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="82.0" prefWidth="600.0">
+               <children>
+                  <Label text="Numero de telephone" textFill="WHITE" />
+                  <TextField fx:id="numTelephone">
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" onAction="#validationAuthentification" text="Valider">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="100.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
